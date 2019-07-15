@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+$main-blue-color: #4287f5;
+$main-white-color: #f2f7ff;
+$main-dark-color: #061c40;
+$main-font-family: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $main-white-color;
+    color: $main-dark-color;
+    font-family: $main-font-family;
+    
+    .header{
+        background: $main-blue-color;
+        padding: 20px;
+    
+        h1{
+            color: $main-white-color;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 1px $main-dark-color;
+        }
+    }
+
+    .scoreboard{
+        margin: 20px auto;
+        border: 4px solid $main-blue-color;
+        border-radius: 4px;
+        text-align: center;
+        width: 300px;
+        color: $main-dark-color;
+        font-size: 52px;
+        padding: 20px;
+        position: relative;
+
+        .label{
+            background: $main-dark-color;
+            color: $main-white-color;
+            font-size: 16px;
+            padding: 4px 10px;
+            width: 100px;
+        }
+
+        .label--user{
+            position: absolute;
+            top: 30px;
+            left: -50px;
+        }
+
+        .label--pc{
+            position: absolute;
+            top: 30px;
+            right: -50px;
+        }
+    }
+
+    .result{
+        font-size: 36px;
+        
+        p{
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+
+    .choices{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        .choice{
+            border: 4px solid $main-blue-color;
+            border-radius: 50%;
+            padding: 20px;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: all .3s ease;
+
+            img{
+                height: 80px;
+            }
+        }
+
+        .choice:hover{
+            border: 4px solid $main-dark-color;
+        }
+    }
+
+    .action-message{
+        text-align: center;
+        color: $main-dark-color;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+}
